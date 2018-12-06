@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Listings</h2>
+    <div class="memberList">
+    {% for listing in listings %}
+        <div class="member">
+            {% print(listing) %}
+        </div>
+    {% endfor %}
+    </div>
+    <h2>Members</h2>
+    <div class="memberList">
+    {% for member in members %}
+        <div class="member">
+            {% print(member) %}
+        </div>
+    {% endfor %}
+    </div>
+    <h2>Colleges</h2>
+    <div class="collegeList">
+    {% for college in colleges %}
+        <div class="college">
+            {% print(college) %}
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

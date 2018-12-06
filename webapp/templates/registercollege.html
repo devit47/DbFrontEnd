@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Register new college</h2>
+    <form method="POST">
+        <label>College name
+            <input type="text" name="collegename">
+        </label><br>
+        <input type="submit" name="registercollege" value="Register">
+    </form>
+{% endblock %}
